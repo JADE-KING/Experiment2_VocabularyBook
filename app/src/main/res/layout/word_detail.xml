@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wordDetailScroll"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"  >
+
+    <LinearLayout
+        android:id="@+id/wordDetailLinear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp" >
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="word"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/addToVB"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/addition"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+
+            <TextView
+                android:id="@+id/phonetic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="phonetic"
+                android:textSize="16sp"
+                android:typeface="monospace" />
+
+            <ImageView
+                android:id="@+id/speak"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/systemprompt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ukPhonetic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="英 phonetic"
+                android:textSize="16sp"
+                android:typeface="monospace" />
+
+            <ImageView
+                android:id="@+id/ukSpeak"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/systemprompt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/usPhonetic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="美 phonetic"
+                android:textSize="16sp"
+                android:typeface="monospace" />
+
+            <ImageView
+                android:id="@+id/usSpeak"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/systemprompt" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/explains"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="explains"
+            android:textSize="16sp"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/webExplains"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="webExplains"
+            android:textSize="16sp"
+            android:typeface="monospace" />
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/userNoteHead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="用户笔记："
+                android:textSize="16sp"
+                android:typeface="monospace" />
+
+            <ImageView
+                android:id="@+id/userNoteEditor"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/editor" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/userNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="userNote"
+            android:textSize="16sp"
+            android:typeface="monospace" />
+
+        <TextView
+            android:autoLink="web"
+            android:id="@+id/deeplink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="deeplink"
+            android:textSize="16sp"
+            android:typeface="monospace" />
+
+    </LinearLayout>
+
+</ScrollView>

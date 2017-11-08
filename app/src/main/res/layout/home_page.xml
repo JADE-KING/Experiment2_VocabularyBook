@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/homePageFocus"
+            android:layout_weight="0"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp" />
+
+        <SearchView
+            android:iconifiedByDefault="false"
+            android:id="@+id/wordSearchOnline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="请输入想要翻译的文字" />
+
+        <ImageView
+            android:adjustViewBounds="true"
+            android:id="@+id/dailyImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/img_4445" />
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/dailyTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/daily_text_default"
+                android:textSize="20sp" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/dailyDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2017-1-17"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/dailySpeak"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/systemprompt" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/dailyContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Content"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/dailyNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Note"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/homePageLinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+</FrameLayout>
